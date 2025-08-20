@@ -1,18 +1,22 @@
 {
   "name": "ssl-public-key",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI to fetch and manage SSL public keys",
   "main": "index.js",
+  "bin": {
+    "ssl-public-key": "./dist/index.js"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "lint": "biome lint --error-on-warnings ./",
     "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
     "format": "biome format --write ./",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "pnpm build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["ssl", "cli", "public-key"],
+  "author": "oiqgj",
+  "license": "MIT",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@biomejs/biome": "^2.2.0",
