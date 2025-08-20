@@ -1,0 +1,19 @@
+# Node
+node_modules
+dist
+coverage
+.npm
+.nyc_output
+
+# Editor
+.idea
+.vscode
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
