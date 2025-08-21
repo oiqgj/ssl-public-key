@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 import { program } from "commander";
+import { version } from "../package.json";
 
 import { getProfile, getPublickKey, listProfiles, removeDomain, removeProfile, setDomain } from "./commands";
 
 program
   .name("ssl-public-key")
   .description("Extract the public key from an SSL/TLS certificate")
-  .version("0.0.1", "-v, --version");
+  .version(version, "-v, --version");
 
 program.addCommand(getPublickKey, { isDefault: true });
 
