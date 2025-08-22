@@ -1,6 +1,6 @@
 {
   "name": "ssl-public-key",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "CLI to fetch and manage SSL public keys",
   "main": "index.js",
   "bin": {
@@ -14,10 +14,18 @@
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pnpm build"
   },
-  "keywords": ["ssl", "cli", "public-key"],
-  "author": "oiqgj",
+  "keywords": ["ssl", "cli", "public-key", "spki", "tls", "cerificate", "certificate-pinning"],
+  "author": "oiqgj <oiqgj@proton.me> (https://github.com/oiqgj)",
   "license": "MIT",
   "packageManager": "pnpm@10.13.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oiqgj/ssl-public-key"
+  },
+  "homepage": "https://github.com/oiqgj/ssl-public-key",
+  "bugs": {
+    "url": "https://github.com/oiqgj/ssl-public-key/issues"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.2.0",
     "@types/node": "^24.3.0",
